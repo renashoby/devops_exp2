@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Simple Calculator</title>
+    <title>Simple Calculator App</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #89f7fe, #66a6ff);
+            background-color: #ffffff;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -19,7 +19,13 @@
             padding: 20px;
             border-radius: 15px;
             box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
-            width: 300px;
+            width: 320px;
+            text-align: center;
+        }
+        h1 {
+            color: #007acc;
+            margin-bottom: 15px;
+            font-size: 24px;
         }
         .display {
             width: 100%;
@@ -68,6 +74,7 @@
 <body>
 
     <div class="calculator">
+        <h1>Simple Calculator</h1>
         <input type="text" id="display" class="display" disabled>
         <div class="buttons">
             <button onclick="appendValue('7')">7</button>
